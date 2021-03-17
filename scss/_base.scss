@@ -1,0 +1,260 @@
+// my styles (Danil)
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	box-sizing: border-box;
+}
+li {
+	list-style-type: none;
+}
+
+dl, ol, ul {
+  margin-bottom: 0;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+button {
+	outline: none;
+	border: none;
+	display: block;
+	background: transparent;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input {
+	&:focus {
+		outline: none;
+	}
+}
+
+body, html {
+	overflow-x: hidden;
+}
+
+body {
+	color: #222222;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+
+h1 {
+
+}
+
+h1, h2, h3,h4, h5, h6 {
+	font-weight: 700;
+}
+
+h2 {
+
+}
+
+  
+  button,
+  input {
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: none;
+  }
+  
+
+// modificators
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.color--yellow {
+  color: #FFA049;
+}
+
+.btn-default {
+  background: #FFA149;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1;
+  color: #FFFFFF;
+  padding: 22px 45px;
+  transition: all 0.3s;
+  &:hover {
+	  background: #ffb570;
+  }
+}
+
+.md-form {
+  max-width: 380px;
+  width: 100%;
+  margin-right: 12px;
+  .form-control {
+    background: #FFFFFF;
+    border: 0.5px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    padding: 19px 20px;
+    width: 100%;
+    height: 60px;
+    color: #AAAAAA;
+  }
+}
+
+input ::-webkit-input-placeholder {
+  color: #AAAAAA;
+}
+
+input ::-moz-placeholder {
+  color: #AAAAAA;
+}
+
+input :-moz-placeholder {
+  color: #AAAAAA;
+}
+
+input :-ms-input-placeholder {
+  color: #AAAAAA;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+
+
+.container {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}	
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+}	
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.col-lg-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+
+  .col-lg-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+  .col-lg-2 {
+		flex: 0 0 16.6666%;
+		max-width: 16.6666%;
+	}
+
+	.col-lg-8 {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%;
+	}
+}	
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1100px;
+	}
+}	
+
+@media (min-width: 1366px) {
+	.container {
+		max-width: 1200px;
+		// padding: 0 15px;
+	}
+}	
+
+.container {
+	padding: 0 15px;
+}
+
+
+  .text-center {
+    text-align: center;
+  }
+
+.section__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  /* or 48px */
+  
+  text-align: center;
+  
+  /* Dark Text */
+  
+  color: #222222;
+}
+
+.mx-auto {
+	margin-left: auto!important;
+    margin-right: auto!important;
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

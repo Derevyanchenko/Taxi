@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello!</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+
+        <header class="header thanks">
+            <div class="header__bg-left">
+                <img src="img/thanks-page/thanks-img-left.svg" class="img-fluid" alt="">
+            </div>
+            <!-- header__bg left -->
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </div>
+                    <p class="thanks__subtitle">
+                        <span class="fw800">Спасибо!</span> осталось совсем немного...
+                    </p>
+                    <h1 class="thanks__title">
+                        Скачайте приложение <br>
+                        <span class="color--yellow">такси “Десятка”</span>
+                    </h1>
+                    
+                    <div class="thanks__btns">
+                        <a href="https://google.com" class="thanks-btn apple-btn">
+                            <img src="./img/thanks-page/btn-download-apple.svg" alt="">
+                        </a>
+                        <a href="https://google.com" class="thanks-btn android-btn">
+                            <img src="./img/thanks-page/btn-download-android.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="header__bg-right">
+                    <img src="img/fon-man-right.svg" class="img-fluid" alt="">
+                </div>
+                <!-- header__bg left -->
+            </div>
+        </header>
+        <!-- header -->
+
+        <section class="steps">
+            <div class="container">
+                <div class="steps__wrapper">
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <div class="steps__item">
+                                <div class="steps__item-num">1</div>
+                                <p class="steps__item-text">
+                                    Скачайте приложение из&nbsp;вашего магазина приложений
+                                </p>
+                            </div>
+                        </div>
+                        <!-- col -->
+
+                        <div class="col-lg-4">
+                            <div class="steps__item">
+                                <div class="steps__item-num">2</div>
+                                <p class="steps__item-text">
+                                    Установите приложение и&nbsp;пройдите простую регистрацию
+                                </p>
+                            </div>
+                        </div>
+                        <!-- col -->
+
+                        <div class="col-lg-4">
+                            <div class="steps__item">
+                                <div class="steps__item-num">3</div>
+                                <p class="steps__item-text">
+                                    Совершите поездку с&nbsp;использованием бонусной скидки
+                                </p>
+                            </div>
+                        </div>
+                        <!-- col -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- steps -->
+
+        <footer class="footer thanks__footer">
+                <div class="footer__image">
+                    <img src="img/thanks-page/thanks-footer-bg.svg" class="img-fluid"  alt="">
+                </div>
+            <div class="container">
+                <p class="footer__copy">
+                    2021 ГК "Десятка". Все права защищены.
+                </p>
+            </div>
+        </footer>
+
+        <script>
+
+            var btns = document.querySelector(".thanks__btns");
+            var apple_btn = document.querySelector(".apple-btn");
+            var android_btn = document.querySelector(".android-btn");
+
+            // document.querySelectorAll(".android-btn").style.display = "none";
+
+            console.log(android_btn);
+
+            if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+                console.log("ios-btn");
+
+                apple_btn.style.display = "block";
+                android_btn.style.display = "none";
+
+            } 
+            else if(/Android/i.test(navigator.userAgent)) {
+                console.log("android-btn");
+                apple_btn.style.display = "none";
+                android_btn.style.display = "block";
+            }
+             else {
+                console.log("android-btn and iphone");
+                apple_btn.style.display = "block";
+                android_btn.style.display = "block";
+            }
+
+        </script>
+
+    </body>
+</html>

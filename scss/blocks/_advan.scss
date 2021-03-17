@@ -1,0 +1,63 @@
+// advan
+
+.advantages {
+    margin-top: 95px;
+    background: #fff;
+    padding-top: 60px;
+    position: relative;
+    z-index: 0;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 66%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: #FFFBF8;
+    }
+}
+
+.advantages__wrapper {
+    margin-top: 45px;
+}
+
+.advantages__box {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(182, 173, 169, 0.14);
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-bottom: 43px;
+    padding-left: 52px;
+    padding-right: 55px;
+    
+}
+
+.advantages__box-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 161, 73, 0.1);
+    img {
+        max-width: 100%;
+    }
+}
+
+.advantages__box-title {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 170%;
+    color: #333333;
+}
+
+.advantages__box-text {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 160%;
+    color: #555555;
+}

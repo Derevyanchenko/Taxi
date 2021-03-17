@@ -1,0 +1,39 @@
+// footer
+
+.footer {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.footer__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFA049;
+}
+
+.footer__subtitle {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 160%;
+    color: #333333;
+}
+
+.footer__image {
+    height: 177px;
+    img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        max-height: 100%;
+    }
+}
+
+.footer__copy {
+    padding: 14px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 160%;
+    color: #333333;
+}
